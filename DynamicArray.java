@@ -72,6 +72,20 @@ public class DynamicArray {
         }
         return arrayTwo;
     }
+    /**
+     * This method iterates through the string and
+     * matches each element with the string param
+     * Return false if none of the elements match
+     * and return true if there is a match 
+     * @param String string 
+     * To iterate through array data use a for loop
+     * To match elements with param 
+     * 
+     */
+    public static boolean contains(String string){
+        
+        return false;
+    }
 
   
     
