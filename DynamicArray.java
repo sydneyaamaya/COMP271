@@ -65,7 +65,7 @@ public class DynamicArray {
       * use for loop to iterate though param 
       */
 
-    public String[] resize(String[] myArray){
+    public static String[] resize(String[] myArray){
         String [] arrayTwo = new String [2 * myArray.length];
         for (int i = 0; i < myArray.length; i++){
             arrayTwo[i] = myArray[i];
