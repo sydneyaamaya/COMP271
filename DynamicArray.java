@@ -48,7 +48,7 @@ public class DynamicArray {
     public void add(String string) {
         // Make sure there is room in array data
         if (this.position == this.data.length) {
-            resize();
+            resize(data);
         }
         // Now array has room for more elements.
         this.data[this.position] = string;
@@ -65,10 +65,10 @@ public class DynamicArray {
       * use for loop to iterate though param 
       */
 
-    public static String[] resize(String[] myArray){
-        String [] arrayTwo = new String [2 * myArray.length];
-        for (int i = 0; i < myArray.length; i++){
-            arrayTwo[i] = myArray[i];
+    public static String[] resize(String [] data){
+        String [] arrayTwo = new String [2 * data.length];
+        for (int i = 0; i < data.length; i++){
+            arrayTwo[i] = data[i];
         }
         return arrayTwo;
     }
