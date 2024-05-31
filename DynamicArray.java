@@ -54,5 +54,25 @@ public class DynamicArray {
         this.data[this.position] = string;
         this.position++;
     } // method add
+
+    /**
+      * This method takes an array and returns an array with
+      * twice a many elements and contains the data of the
+      * input array 
+      * @param myArray 
+      * To double array multiple length of parameter by 2
+      * To put data stored in parameter array in new array
+      * use for loop to iterate though param 
+      */
+
+    public static String[] resize(String[] myArray){
+        String [] arrayTwo = new String [2 * myArray.length];
+        for (int i = 0; i < myArray.length; i++){
+            arrayTwo[i] = myArray[i];
+        }
+        return arrayTwo;
+    }
+
+  
     
 } // class DynamicArray
