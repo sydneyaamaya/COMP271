@@ -79,11 +79,15 @@ public class DynamicArray {
      * and return true if there is a match 
      * @param String string 
      * To iterate through array data use a for loop
-     * To match elements with param 
-     * 
+     * To match elements with param use an if 
+     * statement to compare i to string
      */
-    public static boolean contains(String string){
-        
+    public boolean contains(String string){
+        for (int i = 0; i < this.data.length;i++){
+            if (string.equals(this.data[i])){
+                return true;
+            }
+        }
         return false;
     }
 
