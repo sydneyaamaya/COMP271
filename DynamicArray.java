@@ -91,6 +91,10 @@ public class DynamicArray {
         return false;
     }
 
+    public static void main (String [] args){
+        System.out.println("Hello world!");
+    }
+
   
     
 } // class DynamicArray
