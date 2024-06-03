@@ -90,11 +90,10 @@ public class DynamicArray {
         }
         return false;
     }
+    /* I added a main method to test my code
+     */
 
     public static void main (String [] args){
         System.out.println("Hello world!");
-    }
-
-  
-    
+    }   
 } // class DynamicArray
