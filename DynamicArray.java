@@ -95,5 +95,7 @@ public class DynamicArray {
 
     public static void main (String [] args){
         System.out.println("Hello world!");
+        DynamicArray myArray = new DynamicArray();
+        
     }   
 } // class DynamicArray
