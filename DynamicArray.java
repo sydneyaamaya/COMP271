@@ -78,24 +78,42 @@ public class DynamicArray {
      * Return false if none of the elements match
      * and return true if there is a match 
      * @param String string 
-     * To iterate through array data use a for loop
-     * To match elements with param use an if 
-     * statement to compare i to string
      */
     public boolean contains(String string){
-        for (int i = 0; i < this.data.length;i++){
-            if (string.equals(this.data[i])){
-                return true;
+        int i = 0;
+        boolean result = false;
+        while (i < length && result == false){
+            if (array[i] == string){
+                result = true;
             }
         }
-        return false;
+        return true;
     }
-    /* I added a main method to test my code
+
+    /** countOf method counts the number of
+     * times the string param appears in the 
+     * array and returns an int
+     * create int variable and use a for 
+     * loop to iterate through data 
+     * and count how many times 
+     * string appears 
      */
+
+     public int countOf(String string){
+        int number = 0;
+        for (int i = 0; i < data.length; i++){
+            if (data[i].equals(string)){
+                number++;
+            }
+        }
+        return number;
+     }
+    /* I added a main method to test my code
+     */ 
 
     public static void main (String [] args){
         System.out.println("Hello world!");
-        DynamicArray myArray = new DynamicArray();
-        
-    }   
+        DynamicArray myArray = new DynamicArray(3, 0); 
+    }  
+
 } // class DynamicArray
