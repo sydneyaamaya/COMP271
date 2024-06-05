@@ -107,13 +107,6 @@ public class DynamicArray {
             }
         }
         return number;
-     }
-    /* I added a main method to test my code
-     */ 
-
-    public static void main (String [] args){
-        System.out.println("Hello world!");
-        DynamicArray myArray = new DynamicArray(3, 0); 
-    }  
+     } 
 
 } // class DynamicArray
