@@ -87,7 +87,7 @@ public class DynamicArray {
                 result = true;
             }
         }
-        return true;
+        return result;
     }
 
     /** countOf method counts the number of
